@@ -1,0 +1,52 @@
+﻿{
+  "Products": [
+    {
+      "Price": 3.99,
+      "Id": "Frosted Flakes"
+    },
+    {
+      "Price": 4.99,
+      "Id": "Wheaties"
+    },
+    {
+      "Price": 2.99,
+      "Id": "Corn Flakes"
+    },
+    {
+      "Price": 3.50,
+      "Id": "Corn Pops"
+    },
+    {
+      "Price": 4.50,
+      "Id": "Fruit Loops"
+    },
+    {
+      "Price": 2.25,
+      "Id": "Cheerios"
+    },
+    {
+      "Price": 6.99,
+      "Id": "Vegetable Lasagna"
+    },
+    {
+      "Price": 8.99,
+      "Id": "Meat Lasagna"
+    },
+    {
+      "Price": 9.99,
+      "Id": "Garfield's Choice Lasagna"
+    },
+    {
+      "Price": 19.99,
+      "Id": "Beef Ribs"
+    },
+    {
+      "Price": 4.99,
+      "Id": "2% Milk"
+    },
+    {
+      "Price": 4.99,
+      "Id": "1% Milk"
+    }
+  ]
+}

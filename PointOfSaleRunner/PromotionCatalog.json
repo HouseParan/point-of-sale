@@ -1,0 +1,50 @@
+﻿{
+  // Sets the overall pricing strategy for a sale -- probably better off in a different file, but let's use this one for now.
+  "OverallStrategy": "BestForCustomer",
+  "SalesLineItemDiscounts": [
+    // Discounts are always applied to the subtotal of all line items for the particular product (unless DiscountAppliedOnNextProduct is set to true).
+    {
+      // Single quantity absolute discount (i.e. instant savings) example.
+      "Discount": "$1.50",
+      "EffectiveFrom": "2016-01-01",
+      "EffectiveTo": "2016-12-31",
+      "ThresholdQuantity": 1,
+      "ProductId": "Fruit Loops"
+    },
+    {
+      // Multiple quantity percentage discount example.
+      "Discount": "10%",
+      "EffectiveFrom": "2016-01-01 05:00",
+      "EffectiveTo": "2016-12-31 12:00",
+      "ThresholdQuantity": 3,
+      "ProductId": "Vegetable Lasagna"
+    },
+    {
+      // Multiple quantity percentage discount applied to same product.
+      "Discount": "25%",
+      "EffectiveFrom": "2016-01-01 05:00",
+      "EffectiveTo": "2016-12-31 12:00",
+      "ThresholdQuantity": 6,
+      "ProductId": "Vegetable Lasagna"
+    },
+    {
+      // "Buy One, Get One Free" example.
+      "Discount": "100%",
+      "DiscountAppliedOnNextProduct": true,
+      "EffectiveFrom": "2016-01-01",
+      "EffectiveTo": "2016-12-31",
+      "ProductId": "2% Milk",
+      "ThresholdQuantity": 1
+    },
+    {
+      // "Buy Two, Get One 50% off" example.
+      "Discount": "50%",
+      "DiscountAppliedOnNextProduct": true,
+      "EffectiveFrom": "2016-01-01",
+      "EffectiveTo": "2016-12-31",
+      "ProductId": "Cheerios",
+      "ThresholdQuantity": 2
+    }
+  ]
+  /* "TransactionDiscounts": []   Probable extension. */
+}
